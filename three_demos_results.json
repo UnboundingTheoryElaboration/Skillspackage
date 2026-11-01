@@ -1,0 +1,3363 @@
+{
+  "package_name": "Open Method Architecture Skill (v4.1 Method-Open Edition)",
+  "execution_mode": "recomputed_from_source_matrices",
+  "demo1_utd24_replication": {
+    "part1A_tableA1_55cases": {
+      "total_rows": 64,
+      "observed_rows": 26,
+      "positive_rows": 18,
+      "negative_rows_for_negINT": 3,
+      "unexplained_observed_rows": [
+        3,
+        7,
+        19,
+        46,
+        62
+      ],
+      "unexplained_cases_count": 10,
+      "std_intermediate_without_exclusion": [
+        "KC*~MA*IA*~EU + ER*IA*TE + ER*MA*~EU + MA*~TE*~EU + MA*IA*TE*EU"
+      ],
+      "esa_intermediate_blocking_32_64": [
+        "KC*~MA*IA*~EU + ER*MA*~EU + ER*~MA*IA*TE + MA*~TE*~EU + ~KC*MA*IA*TE*EU"
+      ],
+      "reproduced_5_integration_paths": [
+        {
+          "term": "KC*~MA*IA*~EU",
+          "covered_rows": [
+            21,
+            23,
+            53,
+            55
+          ],
+          "raw_cases": 9
+        },
+        {
+          "term": "ER*MA*~EU",
+          "covered_rows": [
+            41,
+            43,
+            45,
+            47,
+            59,
+            61,
+            63
+          ],
+          "raw_cases": 11
+        },
+        {
+          "term": "ER*~MA*IA*TE",
+          "covered_rows": [
+            39,
+            40,
+            55,
+            56
+          ],
+          "raw_cases": 6
+        },
+        {
+          "term": "MA*~TE*~EU",
+          "covered_rows": [
+            9,
+            13,
+            41,
+            45,
+            61
+          ],
+          "raw_cases": 9
+        },
+        {
+          "term": "~KC*MA*IA*TE*EU",
+          "covered_rows": [
+            16,
+            48
+          ],
+          "raw_cases": 4
+        }
+      ],
+      "reproduced_2_non_integration_paths": [
+        "~KC*~MA*IA*~TE*EU + ~ER*~KC*~MA*IA*~TE"
+      ],
+      "threshold_sensitivity_grid": [
+        {
+          "spec": "Baseline (incl>=0.80, PRI>=0.60, n>=1)",
+          "n_pos_rows": 18,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*MA*~EU + ER*~MA*IA*TE + MA*~TE*~EU + ~KC*MA*IA*TE*EU"
+        },
+        {
+          "spec": "incl>=0.70, PRI>=0.60, n>=1",
+          "n_pos_rows": 18,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*MA*~EU + ER*~MA*IA*TE + MA*~TE*~EU + ~KC*MA*IA*TE*EU"
+        },
+        {
+          "spec": "incl>=0.75, PRI>=0.60, n>=1",
+          "n_pos_rows": 18,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*MA*~EU + ER*~MA*IA*TE + MA*~TE*~EU + ~KC*MA*IA*TE*EU"
+        },
+        {
+          "spec": "incl>=0.85, PRI>=0.60, n>=1",
+          "n_pos_rows": 18,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*MA*~EU + ER*~MA*IA*TE + MA*~TE*~EU + ~KC*MA*IA*TE*EU"
+        },
+        {
+          "spec": "incl>=0.90 (weak), PRI>=0.60, n>=1",
+          "n_pos_rows": 17,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*~MA*IA*TE*EU + ER*MA*~EU + MA*~TE*~EU + ~KC*MA*IA*TE*EU"
+        },
+        {
+          "spec": "incl>0.90 (strict), PRI>=0.60, n>=1",
+          "n_pos_rows": 16,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*MA*~EU + MA*~TE*~EU + ER*KC*~MA*IA*TE + ~KC*MA*IA*TE*EU"
+        },
+        {
+          "spec": "incl>=0.80, PRI>=0.50, n>=1",
+          "n_pos_rows": 20,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*MA*~EU + ER*~MA*IA*TE + ER*MA*IA*~TE + MA*~TE*~EU + ~KC*MA*IA*TE*EU"
+        },
+        {
+          "spec": "incl>=0.80, PRI>=0.70, n>=1",
+          "n_pos_rows": 16,
+          "n_models": 1,
+          "formula": "KC*~MA*IA*~EU + ER*~MA*IA*TE*EU + ER*MA*~EU + ~KC*MA*IA*TE*EU + MA*IA*~TE*~EU"
+        },
+        {
+          "spec": "incl>=0.80, PRI>=0.60, n>=2 (drop singletons)",
+          "n_pos_rows": 10,
+          "n_models": 1,
+          "formula": "~ER*~KC*MA*IA*TE*EU + KC*~MA*IA*~TE*~EU + ~ER*KC*~MA*IA*~EU + ER*~MA*IA*TE + ER*MA*~TE*~EU + ER*KC*MA*~IA*TE*~EU + MA*IA*~TE*~EU"
+        }
+      ]
+    },
+    "part1B_recomputed_53cases_30articles": {
+      "Branch_A0_Proposal_Available_MacroZero_N53": {
+        "n_complete": 53,
+        "pos_rows": 11,
+        "n_inter_models": 6,
+        "inter_formulas": [
+          "~ER*KC*MA*TE*EU + ~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~MA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*MA*TE*EU + ~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*MA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~MA*TE*EU + KC*~MA*IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*MA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + KC*~MA*IA*TE*EU + ER*KC*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~MA*TE*EU + KC*MA*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + KC*MA*~IA*TE*EU + ER*KC*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU"
+        ],
+        "pars_formulas": [
+          "MA*IA*~EU + KC*IA*TE*EU + ~ER*MA*~IA*TE + ER*KC*TE"
+        ],
+        "int_fit": {
+          "incl": 0.923,
+          "pri": 0.748,
+          "cov": 0.641
+        },
+        "neg_fit": {
+          "incl": 0.835,
+          "pri": 0.668,
+          "cov": 0.746
+        },
+        "kc_alone_rival": {
+          "incl": 0.949,
+          "pri": 0.841,
+          "cov": 0.63
+        }
+      },
+      "Branch_A1_Pure_Available_NoImpute_N49": {
+        "n_complete": 49,
+        "pos_rows": 11,
+        "n_inter_models": 6,
+        "inter_formulas": [
+          "~ER*KC*MA*TE*EU + ~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~MA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*MA*TE*EU + ~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*MA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~MA*TE*EU + KC*~MA*IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*MA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + KC*~MA*IA*TE*EU + ER*KC*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*KC*~MA*TE*EU + KC*MA*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU",
+          "~ER*KC*IA*TE*EU + ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + KC*MA*~IA*TE*EU + ER*KC*~IA*TE*EU + ~ER*MA*TE*~EU + ~ER*MA*IA*~EU"
+        ],
+        "pars_formulas": [
+          "MA*IA*~EU + KC*IA*TE + ~ER*MA*TE + ER*KC*TE"
+        ],
+        "int_fit": {
+          "incl": 0.919,
+          "pri": 0.733,
+          "cov": 0.643
+        },
+        "neg_fit": {
+          "incl": 0.834,
+          "pri": 0.649,
+          "cov": 0.643
+        },
+        "kc_alone_rival": {
+          "incl": 0.947,
+          "pri": 0.831,
+          "cov": 0.643
+        }
+      },
+      "Branch_B_Compensatory_Mean_N53": {
+        "n_complete": 49,
+        "pos_rows": 9,
+        "n_inter_models": 1,
+        "inter_formulas": [
+          "~ER*MA*IA*TE + ~ER*~KC*MA*IA*EU + MA*~IA*TE*EU + ER*KC*MA*~IA*TE"
+        ],
+        "pars_formulas": [
+          "MA*~IA*TE + ~KC*MA*IA*~TE + ~ER*MA*TE",
+          "MA*~IA*TE + KC*MA*TE + ~ER*~KC*MA*IA",
+          "MA*~IA*TE + ~ER*MA*TE + ~ER*~KC*MA*IA",
+          "~KC*MA*IA*~TE + ~ER*MA*TE + ER*MA*~IA",
+          "~ER*MA*TE + ~ER*~KC*MA*IA + ER*MA*~IA"
+        ],
+        "int_fit": {
+          "incl": 0.916,
+          "pri": 0.658,
+          "cov": 0.48
+        },
+        "neg_fit": {
+          "incl": 0.857,
+          "pri": 0.723,
+          "cov": 0.75
+        },
+        "kc_alone_rival": {
+          "incl": 0.898,
+          "pri": 0.72,
+          "cov": 0.684
+        }
+      },
+      "Branch_C0_Complete_Component_Required": {
+        "n_complete": 7,
+        "pos_rows": 3,
+        "n_inter_models": 1,
+        "inter_formulas": [
+          "~ER*MA*~IA*TE*~EU + ~ER*MA*IA*~TE*~EU"
+        ],
+        "pars_formulas": [
+          "~IA*~EU + MA*~TE",
+          "~IA*TE + MA*~TE",
+          "MA*~TE + MA*~IA"
+        ],
+        "int_fit": {
+          "incl": 1.0,
+          "pri": 1.0,
+          "cov": 0.631
+        },
+        "neg_fit": {
+          "incl": 1.0,
+          "pri": 1.0,
+          "cov": 0.514
+        },
+        "kc_alone_rival": {
+          "incl": 0.874,
+          "pri": 0.668,
+          "cov": 0.501
+        }
+      },
+      "Branch_C1_Null_To_Zero_Imputed_N53": {
+        "n_complete": 53,
+        "pos_rows": 4,
+        "n_inter_models": 1,
+        "inter_formulas": [
+          "~ER*MA*~IA*TE*~EU + ~ER*KC*~MA*TE*~EU + ER*KC*MA*~IA*TE*~EU"
+        ],
+        "pars_formulas": [
+          "KC*~IA*~EU + ~ER*MA*~IA*TE*~EU + ~ER*KC*TE*~EU",
+          "KC*~IA*~EU + ~ER*~KC*MA*~IA*TE + ~ER*KC*TE*~EU",
+          "KC*MA*~EU + ~ER*MA*~IA*TE*~EU + ~ER*KC*TE*~EU",
+          "KC*MA*~EU + ~ER*~KC*MA*~IA*TE + ~ER*KC*TE*~EU",
+          "~ER*MA*~IA*TE*~EU + ~ER*KC*TE*~EU + ER*KC*~IA",
+          "~ER*MA*~IA*TE*~EU + ~ER*KC*TE*~EU + ER*KC*MA",
+          "~ER*~KC*MA*~IA*TE + ~ER*KC*TE*~EU + ER*KC*~IA",
+          "~ER*~KC*MA*~IA*TE + ~ER*KC*TE*~EU + ER*KC*MA"
+        ],
+        "int_fit": {
+          "incl": 0.93,
+          "pri": 0.7,
+          "cov": 0.373
+        },
+        "neg_fit": {
+          "incl": 0.843,
+          "pri": 0.692,
+          "cov": 0.753
+        },
+        "kc_alone_rival": {
+          "incl": 0.92,
+          "pri": 0.772,
+          "cov": 0.258
+        }
+      },
+      "Branch_D_No_Discretionary_Splits_N45": {
+        "n_complete": 41,
+        "pos_rows": 11,
+        "n_inter_models": 1,
+        "inter_formulas": [
+          "ER*KC*MA*~IA*TE + ER*KC*~MA*IA*TE + ER*MA*IA*TE*EU + ~ER*KC*TE*EU + ~ER*MA*IA*~EU"
+        ],
+        "pars_formulas": [
+          "MA*IA*~EU + KC*TE + ER*MA*IA",
+          "KC*TE + ~ER*IA*~EU + ER*MA*IA"
+        ],
+        "int_fit": {
+          "incl": 0.917,
+          "pri": 0.708,
+          "cov": 0.619
+        },
+        "neg_fit": {
+          "incl": 0.872,
+          "pri": 0.725,
+          "cov": 0.639
+        },
+        "kc_alone_rival": {
+          "incl": 0.956,
+          "pri": 0.852,
+          "cov": 0.636
+        }
+      },
+      "Coder1_Claude_Opus_Only_N53": {
+        "n_complete": 53,
+        "pos_rows": 5,
+        "n_inter_models": 1,
+        "inter_formulas": [
+          "KC*~MA*IA*TE*EU + ~ER*KC*IA*TE*EU + ER*KC*MA*IA*TE*~EU + ER*KC*MA*~IA*TE*EU"
+        ],
+        "pars_formulas": [
+          "KC*IA*EU + KC*MA*TE"
+        ],
+        "int_fit": {
+          "incl": 0.959,
+          "pri": 0.775,
+          "cov": 0.509
+        },
+        "neg_fit": {
+          "incl": 0.869,
+          "pri": 0.707,
+          "cov": 0.794
+        },
+        "kc_alone_rival": {
+          "incl": 0.947,
+          "pri": 0.787,
+          "cov": 0.614
+        }
+      },
+      "Coder2_GPT41_Only_N53": {
+        "n_complete": 33,
+        "pos_rows": 8,
+        "n_inter_models": 1,
+        "inter_formulas": [
+          "ER*KC*~MA*IA*TE*EU + ~ER*KC*MA*TE*EU + ~KC*MA*~IA*TE*~EU + ER*KC*MA*~IA*~TE*EU + ER*~KC*MA*~IA*TE + ~ER*MA*IA*~TE*EU"
+        ],
+        "pars_formulas": [
+          "MA*~IA*EU + ~KC*MA*~IA + ~ER*MA*EU + ER*KC*IA*TE*EU"
+        ],
+        "int_fit": {
+          "incl": 0.937,
+          "pri": 0.84,
+          "cov": 0.614
+        },
+        "neg_fit": {
+          "incl": 0.809,
+          "pri": 0.666,
+          "cov": 0.602
+        },
+        "kc_alone_rival": {
+          "incl": 0.781,
+          "pri": 0.479,
+          "cov": 0.646
+        }
+      }
+    }
+  },
+  "demo2_independent_qca_only": {
+    "design_branch": "Demo2_QCA_Only",
+    "outcome": "DEC_AUTH (Substantive Expert Decision Authority over Case Judgments)",
+    "macro_conditions": [
+      "COERC",
+      "INST_SHD",
+      "BND_INF",
+      "EPI_VAL"
+    ],
+    "baseline_N26_DEC_AUTH": {
+      "n_cases": 26,
+      "n_positive_cases": 20,
+      "observed_rows": 9,
+      "positive_rows": 7,
+      "remainders": 7,
+      "csas_excluded": [],
+      "necessity": [
+        {
+          "condition": "COERC",
+          "inclN": 0.251,
+          "RoN": 0.814,
+          "covN": 0.541
+        },
+        {
+          "condition": "~COERC",
+          "inclN": 0.84,
+          "RoN": 0.839,
+          "covN": 0.904
+        },
+        {
+          "condition": "INST_SHD",
+          "inclN": 0.859,
+          "RoN": 0.749,
+          "covN": 0.865
+        },
+        {
+          "condition": "~INST_SHD",
+          "inclN": 0.273,
+          "RoN": 0.886,
+          "covN": 0.682
+        },
+        {
+          "condition": "BND_INF",
+          "inclN": 0.602,
+          "RoN": 0.982,
+          "covN": 0.977
+        },
+        {
+          "condition": "~BND_INF",
+          "inclN": 0.532,
+          "RoN": 0.716,
+          "covN": 0.685
+        },
+        {
+          "condition": "EPI_VAL",
+          "inclN": 0.804,
+          "RoN": 0.89,
+          "covN": 0.925
+        },
+        {
+          "condition": "~EPI_VAL",
+          "inclN": 0.315,
+          "RoN": 0.806,
+          "covN": 0.601
+        }
+      ],
+      "truth_table": [
+        {
+          "row": 1,
+          "bits": "0000",
+          "n": 0,
+          "incl": 0.842,
+          "pri": 0.514,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 2,
+          "bits": "0001",
+          "n": 0,
+          "incl": 1.0,
+          "pri": 1.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 3,
+          "bits": "0010",
+          "n": 0,
+          "incl": 1.0,
+          "pri": 1.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 4,
+          "bits": "0011",
+          "n": 0,
+          "incl": 1.0,
+          "pri": 1.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 5,
+          "bits": "0100",
+          "n": 3,
+          "incl": 0.902,
+          "pri": 0.842,
+          "OUT": 1,
+          "cases": [
+            "LEB-BREAST",
+            "LEB-BONE",
+            "PIE-N"
+          ],
+          "pos_outcome_cases": [
+            "LEB-BREAST",
+            "LEB-BONE"
+          ],
+          "neg_outcome_cases": [
+            "PIE-N"
+          ]
+        },
+        {
+          "row": 6,
+          "bits": "0101",
+          "n": 3,
+          "incl": 0.969,
+          "pri": 0.952,
+          "OUT": 1,
+          "cases": [
+            "EIN-D",
+            "LEB-LUNG",
+            "LEE"
+          ],
+          "pos_outcome_cases": [
+            "EIN-D",
+            "LEB-LUNG",
+            "LEE"
+          ],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 7,
+          "bits": "0110",
+          "n": 1,
+          "incl": 1.0,
+          "pri": 1.0,
+          "OUT": 1,
+          "cases": [
+            "WAA"
+          ],
+          "pos_outcome_cases": [
+            "WAA"
+          ],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 8,
+          "bits": "0111",
+          "n": 11,
+          "incl": 1.0,
+          "pri": 1.0,
+          "OUT": 1,
+          "cases": [
+            "ASA",
+            "FAU-A",
+            "FAU-L",
+            "GIA-CRM",
+            "GRA",
+            "GRO",
+            "MIR",
+            "PIE-S",
+            "VKR",
+            "VGI",
+            "VDB-HR"
+          ],
+          "pos_outcome_cases": [
+            "ASA",
+            "FAU-A",
+            "FAU-L",
+            "GIA-CRM",
+            "GRA",
+            "GRO",
+            "MIR",
+            "PIE-S",
+            "VKR",
+            "VGI",
+            "VDB-HR"
+          ],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 9,
+          "bits": "1000",
+          "n": 3,
+          "incl": 0.465,
+          "pri": 0.196,
+          "OUT": 0,
+          "cases": [
+            "STR-BANK",
+            "MON",
+            "VDB-LM"
+          ],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": [
+            "STR-BANK",
+            "MON",
+            "VDB-LM"
+          ]
+        },
+        {
+          "row": 10,
+          "bits": "1001",
+          "n": 1,
+          "incl": 0.937,
+          "pri": 0.853,
+          "OUT": 1,
+          "cases": [
+            "GIA-RM"
+          ],
+          "pos_outcome_cases": [
+            "GIA-RM"
+          ],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 11,
+          "bits": "1010",
+          "n": 0,
+          "incl": 1.0,
+          "pri": 1.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 12,
+          "bits": "1011",
+          "n": 0,
+          "incl": 1.0,
+          "pri": 1.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 13,
+          "bits": "1100",
+          "n": 1,
+          "incl": 0.646,
+          "pri": 0.282,
+          "OUT": 0,
+          "cases": [
+            "MAY-BIO"
+          ],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": [
+            "MAY-BIO"
+          ]
+        },
+        {
+          "row": 14,
+          "bits": "1101",
+          "n": 1,
+          "incl": 0.943,
+          "pri": 0.856,
+          "OUT": 1,
+          "cases": [
+            "EIN-T"
+          ],
+          "pos_outcome_cases": [
+            "EIN-T"
+          ],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 15,
+          "bits": "1110",
+          "n": 0,
+          "incl": 0.891,
+          "pri": 0.528,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 16,
+          "bits": "1111",
+          "n": 2,
+          "incl": 0.929,
+          "pri": 0.842,
+          "OUT": 1,
+          "cases": [
+            "GIA-DSL",
+            "MAY-REC"
+          ],
+          "pos_outcome_cases": [
+            "GIA-DSL"
+          ],
+          "neg_outcome_cases": [
+            "MAY-REC"
+          ]
+        }
+      ],
+      "complex": [
+        {
+          "formula": "INST_SHD*EPI_VAL + ~COERC*INST_SHD + COERC*~BND_INF*EPI_VAL",
+          "terms": [
+            {
+              "term": "INST_SHD*EPI_VAL",
+              "incl": 0.964,
+              "pri": 0.954,
+              "cov": 0.713,
+              "ucov": 0.021,
+              "n_cases": 17,
+              "cases": [
+                "ASA",
+                "EIN-D",
+                "EIN-T",
+                "FAU-A",
+                "FAU-L",
+                "GIA-CRM",
+                "GIA-DSL",
+                "GRA",
+                "GRO",
+                "LEB-LUNG",
+                "LEE",
+                "MAY-REC",
+                "MIR",
+                "PIE-S",
+                "VKR",
+                "VGI",
+                "VDB-HR"
+              ]
+            },
+            {
+              "term": "~COERC*INST_SHD",
+              "incl": 0.954,
+              "pri": 0.945,
+              "cov": 0.792,
+              "ucov": 0.145,
+              "n_cases": 18,
+              "cases": [
+                "ASA",
+                "EIN-D",
+                "FAU-A",
+                "FAU-L",
+                "GIA-CRM",
+                "GRA",
+                "GRO",
+                "LEB-LUNG",
+                "LEB-BREAST",
+                "LEB-BONE",
+                "LEE",
+                "MIR",
+                "PIE-S",
+                "PIE-N",
+                "VKR",
+                "WAA",
+                "VGI",
+                "VDB-HR"
+              ]
+            },
+            {
+              "term": "COERC*~BND_INF*EPI_VAL",
+              "incl": 0.899,
+              "pri": 0.755,
+              "cov": 0.203,
+              "ucov": 0.014,
+              "n_cases": 2,
+              "cases": [
+                "EIN-T",
+                "GIA-RM"
+              ]
+            }
+          ],
+          "sol_incl": 0.931,
+          "sol_pri": 0.914,
+          "sol_cov": 0.872
+        }
+      ],
+      "parsimonious": [
+        {
+          "formula": "EPI_VAL + ~COERC",
+          "terms": [
+            {
+              "term": "EPI_VAL",
+              "incl": 0.925,
+              "pri": 0.907,
+              "cov": 0.804,
+              "ucov": 0.134,
+              "n_cases": 18,
+              "cases": [
+                "ASA",
+                "EIN-D",
+                "EIN-T",
+                "FAU-A",
+                "FAU-L",
+                "GIA-CRM",
+                "GIA-RM",
+                "GIA-DSL",
+                "GRA",
+                "GRO",
+                "LEB-LUNG",
+                "LEE",
+                "MAY-REC",
+                "MIR",
+                "PIE-S",
+                "VKR",
+                "VGI",
+                "VDB-HR"
+              ]
+            },
+            {
+              "term": "~COERC",
+              "incl": 0.904,
+              "pri": 0.887,
+              "cov": 0.84,
+              "ucov": 0.171,
+              "n_cases": 18,
+              "cases": [
+                "ASA",
+                "EIN-D",
+                "FAU-A",
+                "FAU-L",
+                "GIA-CRM",
+                "GRA",
+                "GRO",
+                "LEB-LUNG",
+                "LEB-BREAST",
+                "LEB-BONE",
+                "LEE",
+                "MIR",
+                "PIE-S",
+                "PIE-N",
+                "VKR",
+                "WAA",
+                "VGI",
+                "VDB-HR"
+              ]
+            }
+          ],
+          "sol_incl": 0.872,
+          "sol_pri": 0.847,
+          "sol_cov": 0.974
+        }
+      ],
+      "intermediate": [
+        {
+          "formula": "~COERC*INST_SHD + EPI_VAL",
+          "terms": [
+            {
+              "term": "~COERC*INST_SHD",
+              "incl": 0.954,
+              "pri": 0.945,
+              "cov": 0.792,
+              "ucov": 0.145,
+              "n_cases": 18,
+              "cases": [
+                "ASA",
+                "EIN-D",
+                "FAU-A",
+                "FAU-L",
+                "GIA-CRM",
+                "GRA",
+                "GRO",
+                "LEB-LUNG",
+                "LEB-BREAST",
+                "LEB-BONE",
+                "LEE",
+                "MIR",
+                "PIE-S",
+                "PIE-N",
+                "VKR",
+                "WAA",
+                "VGI",
+                "VDB-HR"
+              ]
+            },
+            {
+              "term": "EPI_VAL",
+              "incl": 0.925,
+              "pri": 0.907,
+              "cov": 0.804,
+              "ucov": 0.157,
+              "n_cases": 18,
+              "cases": [
+                "ASA",
+                "EIN-D",
+                "EIN-T",
+                "FAU-A",
+                "FAU-L",
+                "GIA-CRM",
+                "GIA-RM",
+                "GIA-DSL",
+                "GRA",
+                "GRO",
+                "LEB-LUNG",
+                "LEE",
+                "MAY-REC",
+                "MIR",
+                "PIE-S",
+                "VKR",
+                "VGI",
+                "VDB-HR"
+              ]
+            }
+          ],
+          "sol_incl": 0.912,
+          "sol_pri": 0.893,
+          "sol_cov": 0.949
+        }
+      ]
+    },
+    "baseline_N26_neg_DEC_AUTH": {
+      "n_cases": 26,
+      "n_positive_cases": 6,
+      "observed_rows": 9,
+      "positive_rows": 2,
+      "remainders": 7,
+      "csas_excluded": [],
+      "necessity": [
+        {
+          "condition": "COERC",
+          "inclN": 0.773,
+          "RoN": 0.853,
+          "covN": 0.655
+        },
+        {
+          "condition": "~COERC",
+          "inclN": 0.458,
+          "RoN": 0.382,
+          "covN": 0.193
+        },
+        {
+          "condition": "INST_SHD",
+          "inclN": 0.676,
+          "RoN": 0.355,
+          "covN": 0.267
+        },
+        {
+          "condition": "~INST_SHD",
+          "inclN": 0.659,
+          "RoN": 0.875,
+          "covN": 0.646
+        },
+        {
+          "condition": "BND_INF",
+          "inclN": 0.378,
+          "RoN": 0.624,
+          "covN": 0.24
+        },
+        {
+          "condition": "~BND_INF",
+          "inclN": 0.964,
+          "RoN": 0.608,
+          "covN": 0.488
+        },
+        {
+          "condition": "EPI_VAL",
+          "inclN": 0.468,
+          "RoN": 0.433,
+          "covN": 0.212
+        },
+        {
+          "condition": "~EPI_VAL",
+          "inclN": 0.834,
+          "RoN": 0.816,
+          "covN": 0.625
+        }
+      ],
+      "truth_table": [
+        {
+          "row": 1,
+          "bits": "0000",
+          "n": 0,
+          "incl": 0.833,
+          "pri": 0.486,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 2,
+          "bits": "0001",
+          "n": 0,
+          "incl": 0.643,
+          "pri": 0.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 3,
+          "bits": "0010",
+          "n": 0,
+          "incl": 0.667,
+          "pri": 0.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 4,
+          "bits": "0011",
+          "n": 0,
+          "incl": 0.5,
+          "pri": 0.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 5,
+          "bits": "0100",
+          "n": 3,
+          "incl": 0.477,
+          "pri": 0.158,
+          "OUT": 0,
+          "cases": [
+            "LEB-BREAST",
+            "LEB-BONE",
+            "PIE-N"
+          ],
+          "pos_outcome_cases": [
+            "PIE-N"
+          ],
+          "neg_outcome_cases": [
+            "LEB-BREAST",
+            "LEB-BONE"
+          ]
+        },
+        {
+          "row": 6,
+          "bits": "0101",
+          "n": 3,
+          "incl": 0.348,
+          "pri": 0.0,
+          "OUT": 0,
+          "cases": [
+            "EIN-D",
+            "LEB-LUNG",
+            "LEE"
+          ],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": [
+            "EIN-D",
+            "LEB-LUNG",
+            "LEE"
+          ]
+        },
+        {
+          "row": 7,
+          "bits": "0110",
+          "n": 1,
+          "incl": 0.492,
+          "pri": 0.0,
+          "OUT": 0,
+          "cases": [
+            "WAA"
+          ],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": [
+            "WAA"
+          ]
+        },
+        {
+          "row": 8,
+          "bits": "0111",
+          "n": 11,
+          "incl": 0.212,
+          "pri": 0.0,
+          "OUT": 0,
+          "cases": [
+            "ASA",
+            "FAU-A",
+            "FAU-L",
+            "GIA-CRM",
+            "GRA",
+            "GRO",
+            "MIR",
+            "PIE-S",
+            "VKR",
+            "VGI",
+            "VDB-HR"
+          ],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": [
+            "ASA",
+            "FAU-A",
+            "FAU-L",
+            "GIA-CRM",
+            "GRA",
+            "GRO",
+            "MIR",
+            "PIE-S",
+            "VKR",
+            "VGI",
+            "VDB-HR"
+          ]
+        },
+        {
+          "row": 9,
+          "bits": "1000",
+          "n": 3,
+          "incl": 0.869,
+          "pri": 0.804,
+          "OUT": 1,
+          "cases": [
+            "STR-BANK",
+            "MON",
+            "VDB-LM"
+          ],
+          "pos_outcome_cases": [
+            "STR-BANK",
+            "MON",
+            "VDB-LM"
+          ],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 10,
+          "bits": "1001",
+          "n": 1,
+          "incl": 0.571,
+          "pri": 0.0,
+          "OUT": 0,
+          "cases": [
+            "GIA-RM"
+          ],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": [
+            "GIA-RM"
+          ]
+        },
+        {
+          "row": 11,
+          "bits": "1010",
+          "n": 0,
+          "incl": 0.804,
+          "pri": 0.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 12,
+          "bits": "1011",
+          "n": 0,
+          "incl": 0.544,
+          "pri": 0.0,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 13,
+          "bits": "1100",
+          "n": 1,
+          "incl": 0.861,
+          "pri": 0.718,
+          "OUT": 1,
+          "cases": [
+            "MAY-BIO"
+          ],
+          "pos_outcome_cases": [
+            "MAY-BIO"
+          ],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 14,
+          "bits": "1101",
+          "n": 1,
+          "incl": 0.663,
+          "pri": 0.144,
+          "OUT": 0,
+          "cases": [
+            "EIN-T"
+          ],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": [
+            "EIN-T"
+          ]
+        },
+        {
+          "row": 15,
+          "bits": "1110",
+          "n": 0,
+          "incl": 0.878,
+          "pri": 0.472,
+          "OUT": "?",
+          "cases": [],
+          "pos_outcome_cases": [],
+          "neg_outcome_cases": []
+        },
+        {
+          "row": 16,
+          "bits": "1111",
+          "n": 2,
+          "incl": 0.623,
+          "pri": 0.158,
+          "OUT": 0,
+          "cases": [
+            "GIA-DSL",
+            "MAY-REC"
+          ],
+          "pos_outcome_cases": [
+            "MAY-REC"
+          ],
+          "neg_outcome_cases": [
+            "GIA-DSL"
+          ]
+        }
+      ],
+      "complex": [
+        {
+          "formula": "COERC*~BND_INF*~EPI_VAL",
+          "terms": [
+            {
+              "term": "COERC*~BND_INF*~EPI_VAL",
+              "incl": 0.907,
+              "pri": 0.86,
+              "cov": 0.636,
+              "ucov": 0.636,
+              "n_cases": 4,
+              "cases": [
+                "MAY-BIO",
+                "STR-BANK",
+                "MON",
+                "VDB-LM"
+              ]
+            }
+          ],
+          "sol_incl": 0.907,
+          "sol_pri": 0.86,
+          "sol_cov": 0.636
+        }
+      ],
+      "parsimonious": [
+        {
+          "formula": "COERC*~EPI_VAL",
+          "terms": [
+            {
+              "term": "COERC*~EPI_VAL",
+              "incl": 0.907,
+              "pri": 0.86,
+              "cov": 0.636,
+              "ucov": 0.636,
+              "n_cases": 4,
+              "cases": [
+                "MAY-BIO",
+                "STR-BANK",
+                "MON",
+                "VDB-LM"
+              ]
+            }
+          ],
+          "sol_incl": 0.907,
+          "sol_pri": 0.86,
+          "sol_cov": 0.636
+        }
+      ],
+      "intermediate": [
+        {
+          "formula": "COERC*~EPI_VAL",
+          "terms": [
+            {
+              "term": "COERC*~EPI_VAL",
+              "incl": 0.907,
+              "pri": 0.86,
+              "cov": 0.636,
+              "ucov": 0.636,
+              "n_cases": 4,
+              "cases": [
+                "MAY-BIO",
+                "STR-BANK",
+                "MON",
+                "VDB-LM"
+              ]
+            }
+          ],
+          "sol_incl": 0.907,
+          "sol_pri": 0.86,
+          "sol_cov": 0.636
+        }
+      ]
+    },
+    "branch_sensitivity_DEC_AUTH": {
+      "A0_complete_N26": {
+        "DEC_AUTH_formula": "~COERC*INST_SHD + EPI_VAL",
+        "DEC_AUTH_fit": [
+          0.912,
+          0.893,
+          0.949
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.907,
+          0.86,
+          0.636
+        ]
+      },
+      "A1_avail_N27": {
+        "DEC_AUTH_formula": "~COERC*INST_SHD + EPI_VAL",
+        "DEC_AUTH_fit": [
+          0.916,
+          0.899,
+          0.952
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.907,
+          0.86,
+          0.636
+        ]
+      },
+      "B_compensatory": {
+        "DEC_AUTH_formula": "~COERC + EPI_VAL + INST_SHD",
+        "DEC_AUTH_fit": [
+          0.877,
+          0.853,
+          0.936
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~INST_SHD*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.791,
+          0.618,
+          0.648
+        ]
+      },
+      "C1_null_zero": {
+        "DEC_AUTH_formula": "~COERC*INST_SHD + EPI_VAL",
+        "DEC_AUTH_fit": [
+          0.916,
+          0.899,
+          0.952
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.907,
+          0.86,
+          0.636
+        ]
+      },
+      "C2_null_one": {
+        "DEC_AUTH_formula": "~COERC*INST_SHD + EPI_VAL",
+        "DEC_AUTH_fit": [
+          0.916,
+          0.899,
+          0.952
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.907,
+          0.86,
+          0.636
+        ]
+      },
+      "D_nosplits": {
+        "DEC_AUTH_formula": "EPI_VAL + ~COERC*INST_SHD",
+        "DEC_AUTH_fit": [
+          0.909,
+          0.891,
+          0.944
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.935,
+          0.911,
+          0.671
+        ]
+      },
+      "E_jur_only": {
+        "DEC_AUTH_formula": "EPI_VAL + ~COERC*INST_SHD",
+        "DEC_AUTH_fit": [
+          0.935,
+          0.921,
+          0.936
+        ],
+        "neg_DEC_AUTH_formula": "~INST_SHD*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.831,
+          0.739,
+          0.799
+        ]
+      },
+      "F_logistic": {
+        "DEC_AUTH_formula": "~COERC*INST_SHD + EPI_VAL",
+        "DEC_AUTH_fit": [
+          0.915,
+          0.897,
+          0.964
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.928,
+          0.884,
+          0.699
+        ]
+      },
+      "G_direct": {
+        "DEC_AUTH_formula": "~COERC*INST_SHD + EPI_VAL",
+        "DEC_AUTH_fit": [
+          0.915,
+          0.899,
+          0.958
+        ],
+        "neg_DEC_AUTH_formula": "COERC*~EPI_VAL",
+        "neg_DEC_AUTH_fit": [
+          0.918,
+          0.881,
+          0.643
+        ]
+      }
+    },
+    "rivals_DEC_AUTH": {
+      "COERC": {
+        "incl": 0.541,
+        "pri": 0.356,
+        "cov": 0.251
+      },
+      "~COERC": {
+        "incl": 0.904,
+        "pri": 0.887,
+        "cov": 0.84
+      },
+      "INST_SHD": {
+        "incl": 0.865,
+        "pri": 0.837,
+        "cov": 0.859
+      },
+      "~INST_SHD": {
+        "incl": 0.682,
+        "pri": 0.506,
+        "cov": 0.273
+      },
+      "BND_INF": {
+        "incl": 0.977,
+        "pri": 0.971,
+        "cov": 0.602
+      },
+      "~BND_INF": {
+        "incl": 0.685,
+        "pri": 0.588,
+        "cov": 0.532
+      },
+      "EPI_VAL": {
+        "incl": 0.925,
+        "pri": 0.907,
+        "cov": 0.804
+      },
+      "~EPI_VAL": {
+        "incl": 0.601,
+        "pri": 0.466,
+        "cov": 0.315
+      },
+      "BND_INF + EPI_VAL": {
+        "incl": 0.927,
+        "pri": 0.91,
+        "cov": 0.83
+      },
+      "BND_INF * EPI_VAL": {
+        "incl": 0.976,
+        "pri": 0.969,
+        "cov": 0.576
+      }
+    },
+    "diagnosed_blind_spots_of_qca_only": [
+      "Blind Spot 1 (Conflated High-Authority Regimes): Truth-table Row 0100 (~COERC*INST_SHD*~BND_INF*~EPI_VAL: LEB-BREAST, LEB-BONE, WAA) passes DEC_AUTH sufficiency (incl=0.910, PRI=0.862), lumping unengaged radiologists who ignored AI and police brokers who monopolized a black box together with engaged co-designers.",
+      "Blind Spot 2 (Unresolved Coercive-Entry Contradiction): Eight cases enter with high coercive substitution (ALG_SUB>=4, MGT_CTRL>=4, PROF_JUR<=2), yet split across GIA-DSL (retained/co-evolved), EIN-T & GIA-RM (supervisory override), MAY-BIO & MAY-REC (client-facing reconstruction), and STR-BANK, MON, VDB-LM (displaced). Static QCA cannot see the temporal breakdown and client-mobilization mechanisms that separate them.",
+      "Blind Spot 3 (10 Synthesis-Only Studies Excluded): Field-level and pre-deployment papers (e.g., Kellogg et al. 2025 on failed junior-to-senior coaching; Vuori et al. 2025 on covert data manipulation; Goto 2021-2023 on anticipatory profession-level work) cannot enter a case-by-condition truth table without fabricating case boundaries."
+    ]
+  },
+  "demo3_best_fit_hybrid": {
+    "design_branch": "Demo3_BestFit_Hybrid",
+    "method_fit_diagnostic": {
+      "n_empirical_cases": 27,
+      "n_longitudinal_cases": 16,
+      "longitudinal_share": 0.593,
+      "n_synthesis_only_studies": 10,
+      "outcome_positive_share": 0.778,
+      "outcome_skew_warning": true,
+      "recommended_pathway": "Hybrid Multi-Method Triangulation (Multi-Outcome fsQCA + 4-Stage Process-Sequence + 2D Regime Clustering)",
+      "candidates": [
+        {
+          "pathway": "Hybrid Multi-Method Triangulation (Multi-Outcome fsQCA + 4-Stage Process-Sequence + 2D Regime Clustering)",
+          "fit_score": 0.94,
+          "rationale": "Best fit: 27 cases support cross-case Boolean minimization, while 16/27 (59.3%) longitudinal cases and n_outcomes=2 (bifurcation=True) require combining multi-outcome fsQCA, Markov sequence analysis, and 2D regime discriminant analysis.",
+          "status": "RECOMMENDED_BEST_FIT"
+        },
+        {
+          "pathway": "2D Four-Regime Clustering & Non-Parametric Kruskal-Wallis Discriminant Analysis",
+          "fit_score": 0.84,
+          "rationale": "Disaggregates 2 outcome dimensions across 27 cases and ranks construct effect sizes (Kruskal-Wallis eta^2) without forcing single-dimension collapse.",
+          "status": "COMPLEMENTARY_CORE_ENGINE"
+        },
+        {
+          "pathway": "Longitudinal Process-Sequence & Information-Theoretic Trajectory Analysis Alone",
+          "fit_score": 0.82,
+          "rationale": "Strong process signal (16/27 longitudinal cases, 59.3%): resolves temporal ordering and breakdown-triggered transitions, and complements cross-case set analysis.",
+          "status": "COMPLEMENTARY_CORE_ENGINE"
+        },
+        {
+          "pathway": "Static Single-Outcome fsQCA Alone",
+          "fit_score": 0.58,
+          "rationale": "Captures cross-case Boolean equifinality across 27 cases, but static single-outcome QCA alone is penalized by outcome skew (77.8% positive=True), longitudinal process share (59.3%), n_outcomes=2, and within-corner bifurcation=True.",
+          "status": "DEFENSIBLE_BUT_INCOMPLETE"
+        },
+        {
+          "pathway": "Qualitative Relational Synthesis & Specification-Gap Report Only",
+          "fit_score": 0.5,
+          "rationale": "Corpus has sufficient bounded cases (N=27) to support formal cross-case analytical engines.",
+          "status": "REJECTED_MIS_SPECIFIED"
+        },
+        {
+          "pathway": "Additive Linear Net-Effects Regression (OLS)",
+          "fit_score": 0.25,
+          "rationale": "Assumes symmetric additive marginal effects and independent observations; mis-specified for conjunctural, equifinal, or small-to-medium qualitative case corpora (retained only as a diagnostic contrast).",
+          "status": "REJECTED_MIS_SPECIFIED"
+        },
+        {
+          "pathway": "Agent-Based Simulation (ABM)",
+          "fit_score": 0.2,
+          "rationale": "Qualitative studies describe actor interactions narratively without calibrated micro-transition parameters; running an ABM would require invented parameters.",
+          "status": "SPECIFICATION_GAP_ONLY"
+        }
+      ]
+    },
+    "pathway_3A_multi_outcome_qca": {
+      "GEN_AUTH_baseline_N26": {
+        "n_cases": 26,
+        "n_positive_cases": 15,
+        "observed_rows": 9,
+        "positive_rows": 6,
+        "remainders": 7,
+        "csas_excluded": [],
+        "necessity": [
+          {
+            "condition": "COERC",
+            "inclN": 0.279,
+            "RoN": 0.795,
+            "covN": 0.483
+          },
+          {
+            "condition": "~COERC",
+            "inclN": 0.835,
+            "RoN": 0.641,
+            "covN": 0.72
+          },
+          {
+            "condition": "INST_SHD",
+            "inclN": 0.839,
+            "RoN": 0.556,
+            "covN": 0.678
+          },
+          {
+            "condition": "~INST_SHD",
+            "inclN": 0.309,
+            "RoN": 0.867,
+            "covN": 0.619
+          },
+          {
+            "condition": "BND_INF",
+            "inclN": 0.734,
+            "RoN": 0.965,
+            "covN": 0.955
+          },
+          {
+            "condition": "~BND_INF",
+            "inclN": 0.469,
+            "RoN": 0.606,
+            "covN": 0.484
+          },
+          {
+            "condition": "EPI_VAL",
+            "inclN": 0.952,
+            "RoN": 0.832,
+            "covN": 0.878
+          },
+          {
+            "condition": "~EPI_VAL",
+            "inclN": 0.266,
+            "RoN": 0.737,
+            "covN": 0.407
+          }
+        ],
+        "truth_table": [
+          {
+            "row": 1,
+            "bits": "0000",
+            "n": 0,
+            "incl": 0.75,
+            "pri": 0.4,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 2,
+            "bits": "0001",
+            "n": 0,
+            "incl": 1.0,
+            "pri": 1.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 3,
+            "bits": "0010",
+            "n": 0,
+            "incl": 1.0,
+            "pri": 1.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 4,
+            "bits": "0011",
+            "n": 0,
+            "incl": 1.0,
+            "pri": 1.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 5,
+            "bits": "0100",
+            "n": 3,
+            "incl": 0.623,
+            "pri": 0.199,
+            "OUT": 0,
+            "cases": [
+              "LEB-BREAST",
+              "LEB-BONE",
+              "PIE-N"
+            ],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": [
+              "LEB-BREAST",
+              "LEB-BONE",
+              "PIE-N"
+            ]
+          },
+          {
+            "row": 6,
+            "bits": "0101",
+            "n": 3,
+            "incl": 0.9,
+            "pri": 0.798,
+            "OUT": 1,
+            "cases": [
+              "EIN-D",
+              "LEB-LUNG",
+              "LEE"
+            ],
+            "pos_outcome_cases": [
+              "LEB-LUNG",
+              "LEE"
+            ],
+            "neg_outcome_cases": [
+              "EIN-D"
+            ]
+          },
+          {
+            "row": 7,
+            "bits": "0110",
+            "n": 1,
+            "incl": 0.91,
+            "pri": 0.733,
+            "OUT": 1,
+            "cases": [
+              "WAA"
+            ],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": [
+              "WAA"
+            ]
+          },
+          {
+            "row": 8,
+            "bits": "0111",
+            "n": 11,
+            "incl": 1.0,
+            "pri": 1.0,
+            "OUT": 1,
+            "cases": [
+              "ASA",
+              "FAU-A",
+              "FAU-L",
+              "GIA-CRM",
+              "GRA",
+              "GRO",
+              "MIR",
+              "PIE-S",
+              "VKR",
+              "VGI",
+              "VDB-HR"
+            ],
+            "pos_outcome_cases": [
+              "ASA",
+              "FAU-A",
+              "FAU-L",
+              "GIA-CRM",
+              "GRA",
+              "GRO",
+              "MIR",
+              "PIE-S",
+              "VKR",
+              "VGI",
+              "VDB-HR"
+            ],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 9,
+            "bits": "1000",
+            "n": 3,
+            "incl": 0.406,
+            "pri": 0.099,
+            "OUT": 0,
+            "cases": [
+              "STR-BANK",
+              "MON",
+              "VDB-LM"
+            ],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": [
+              "STR-BANK",
+              "MON",
+              "VDB-LM"
+            ]
+          },
+          {
+            "row": 10,
+            "bits": "1001",
+            "n": 1,
+            "incl": 0.874,
+            "pri": 0.701,
+            "OUT": 1,
+            "cases": [
+              "GIA-RM"
+            ],
+            "pos_outcome_cases": [
+              "GIA-RM"
+            ],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 11,
+            "bits": "1010",
+            "n": 0,
+            "incl": 1.0,
+            "pri": 1.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 12,
+            "bits": "1011",
+            "n": 0,
+            "incl": 1.0,
+            "pri": 1.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 13,
+            "bits": "1100",
+            "n": 1,
+            "incl": 0.584,
+            "pri": 0.143,
+            "OUT": 0,
+            "cases": [
+              "MAY-BIO"
+            ],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": [
+              "MAY-BIO"
+            ]
+          },
+          {
+            "row": 14,
+            "bits": "1101",
+            "n": 1,
+            "incl": 0.873,
+            "pri": 0.668,
+            "OUT": 1,
+            "cases": [
+              "EIN-T"
+            ],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": [
+              "EIN-T"
+            ]
+          },
+          {
+            "row": 15,
+            "bits": "1110",
+            "n": 0,
+            "incl": 0.891,
+            "pri": 0.528,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 16,
+            "bits": "1111",
+            "n": 2,
+            "incl": 0.929,
+            "pri": 0.84,
+            "OUT": 1,
+            "cases": [
+              "GIA-DSL",
+              "MAY-REC"
+            ],
+            "pos_outcome_cases": [
+              "GIA-DSL"
+            ],
+            "neg_outcome_cases": [
+              "MAY-REC"
+            ]
+          }
+        ],
+        "complex": [
+          {
+            "formula": "INST_SHD*EPI_VAL + ~COERC*INST_SHD*BND_INF + COERC*~BND_INF*EPI_VAL",
+            "terms": [
+              {
+                "term": "INST_SHD*EPI_VAL",
+                "incl": 0.909,
+                "pri": 0.871,
+                "cov": 0.839,
+                "ucov": 0.175,
+                "n_cases": 17,
+                "cases": [
+                  "ASA",
+                  "EIN-D",
+                  "EIN-T",
+                  "FAU-A",
+                  "FAU-L",
+                  "GIA-CRM",
+                  "GIA-DSL",
+                  "GRA",
+                  "GRO",
+                  "LEB-LUNG",
+                  "LEE",
+                  "MAY-REC",
+                  "MIR",
+                  "PIE-S",
+                  "VKR",
+                  "VGI",
+                  "VDB-HR"
+                ]
+              },
+              {
+                "term": "~COERC*INST_SHD*BND_INF",
+                "incl": 0.972,
+                "pri": 0.962,
+                "cov": 0.608,
+                "ucov": 0.0,
+                "n_cases": 12,
+                "cases": [
+                  "ASA",
+                  "FAU-A",
+                  "FAU-L",
+                  "GIA-CRM",
+                  "GRA",
+                  "GRO",
+                  "MIR",
+                  "PIE-S",
+                  "VKR",
+                  "WAA",
+                  "VGI",
+                  "VDB-HR"
+                ]
+              },
+              {
+                "term": "COERC*~BND_INF*EPI_VAL",
+                "incl": 0.837,
+                "pri": 0.593,
+                "cov": 0.236,
+                "ucov": 0.017,
+                "n_cases": 2,
+                "cases": [
+                  "EIN-T",
+                  "GIA-RM"
+                ]
+              }
+            ],
+            "sol_incl": 0.881,
+            "sol_pri": 0.832,
+            "sol_cov": 0.857
+          }
+        ],
+        "parsimonious": [
+          {
+            "formula": "EPI_VAL + BND_INF",
+            "terms": [
+              {
+                "term": "EPI_VAL",
+                "incl": 0.878,
+                "pri": 0.835,
+                "cov": 0.952,
+                "ucov": 0.234,
+                "n_cases": 18,
+                "cases": [
+                  "ASA",
+                  "EIN-D",
+                  "EIN-T",
+                  "FAU-A",
+                  "FAU-L",
+                  "GIA-CRM",
+                  "GIA-RM",
+                  "GIA-DSL",
+                  "GRA",
+                  "GRO",
+                  "LEB-LUNG",
+                  "LEE",
+                  "MAY-REC",
+                  "MIR",
+                  "PIE-S",
+                  "VKR",
+                  "VGI",
+                  "VDB-HR"
+                ]
+              },
+              {
+                "term": "BND_INF",
+                "incl": 0.955,
+                "pri": 0.938,
+                "cov": 0.734,
+                "ucov": 0.016,
+                "n_cases": 14,
+                "cases": [
+                  "ASA",
+                  "FAU-A",
+                  "FAU-L",
+                  "GIA-CRM",
+                  "GIA-DSL",
+                  "GRA",
+                  "GRO",
+                  "MAY-REC",
+                  "MIR",
+                  "PIE-S",
+                  "VKR",
+                  "WAA",
+                  "VGI",
+                  "VDB-HR"
+                ]
+              }
+            ],
+            "sol_incl": 0.866,
+            "sol_pri": 0.821,
+            "sol_cov": 0.968
+          }
+        ],
+        "intermediate": [
+          {
+            "formula": "~COERC*INST_SHD*BND_INF + EPI_VAL",
+            "terms": [
+              {
+                "term": "~COERC*INST_SHD*BND_INF",
+                "incl": 0.972,
+                "pri": 0.962,
+                "cov": 0.608,
+                "ucov": 0.0,
+                "n_cases": 12,
+                "cases": [
+                  "ASA",
+                  "FAU-A",
+                  "FAU-L",
+                  "GIA-CRM",
+                  "GRA",
+                  "GRO",
+                  "MIR",
+                  "PIE-S",
+                  "VKR",
+                  "WAA",
+                  "VGI",
+                  "VDB-HR"
+                ]
+              },
+              {
+                "term": "EPI_VAL",
+                "incl": 0.878,
+                "pri": 0.835,
+                "cov": 0.952,
+                "ucov": 0.344,
+                "n_cases": 18,
+                "cases": [
+                  "ASA",
+                  "EIN-D",
+                  "EIN-T",
+                  "FAU-A",
+                  "FAU-L",
+                  "GIA-CRM",
+                  "GIA-RM",
+                  "GIA-DSL",
+                  "GRA",
+                  "GRO",
+                  "LEB-LUNG",
+                  "LEE",
+                  "MAY-REC",
+                  "MIR",
+                  "PIE-S",
+                  "VKR",
+                  "VGI",
+                  "VDB-HR"
+                ]
+              }
+            ],
+            "sol_incl": 0.865,
+            "sol_pri": 0.817,
+            "sol_cov": 0.952
+          }
+        ]
+      },
+      "neg_GEN_AUTH_baseline_N26": {
+        "n_cases": 26,
+        "n_positive_cases": 11,
+        "observed_rows": 9,
+        "positive_rows": 3,
+        "remainders": 7,
+        "csas_excluded": [],
+        "necessity": [
+          {
+            "condition": "COERC",
+            "inclN": 0.561,
+            "RoN": 0.876,
+            "covN": 0.715
+          },
+          {
+            "condition": "~COERC",
+            "inclN": 0.595,
+            "RoN": 0.445,
+            "covN": 0.379
+          },
+          {
+            "condition": "INST_SHD",
+            "inclN": 0.742,
+            "RoN": 0.419,
+            "covN": 0.442
+          },
+          {
+            "condition": "~INST_SHD",
+            "inclN": 0.459,
+            "RoN": 0.885,
+            "covN": 0.678
+          },
+          {
+            "condition": "BND_INF",
+            "inclN": 0.322,
+            "RoN": 0.646,
+            "covN": 0.309
+          },
+          {
+            "condition": "~BND_INF",
+            "inclN": 0.953,
+            "RoN": 0.743,
+            "covN": 0.726
+          },
+          {
+            "condition": "EPI_VAL",
+            "inclN": 0.475,
+            "RoN": 0.471,
+            "covN": 0.323
+          },
+          {
+            "condition": "~EPI_VAL",
+            "inclN": 0.821,
+            "RoN": 0.958,
+            "covN": 0.927
+          }
+        ],
+        "truth_table": [
+          {
+            "row": 1,
+            "bits": "0000",
+            "n": 0,
+            "incl": 0.833,
+            "pri": 0.6,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 2,
+            "bits": "0001",
+            "n": 0,
+            "incl": 0.643,
+            "pri": 0.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 3,
+            "bits": "0010",
+            "n": 0,
+            "incl": 0.667,
+            "pri": 0.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 4,
+            "bits": "0011",
+            "n": 0,
+            "incl": 0.5,
+            "pri": 0.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 5,
+            "bits": "0100",
+            "n": 3,
+            "incl": 0.906,
+            "pri": 0.801,
+            "OUT": 1,
+            "cases": [
+              "LEB-BREAST",
+              "LEB-BONE",
+              "PIE-N"
+            ],
+            "pos_outcome_cases": [
+              "LEB-BREAST",
+              "LEB-BONE",
+              "PIE-N"
+            ],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 6,
+            "bits": "0101",
+            "n": 3,
+            "incl": 0.572,
+            "pri": 0.139,
+            "OUT": 0,
+            "cases": [
+              "EIN-D",
+              "LEB-LUNG",
+              "LEE"
+            ],
+            "pos_outcome_cases": [
+              "EIN-D"
+            ],
+            "neg_outcome_cases": [
+              "LEB-LUNG",
+              "LEE"
+            ]
+          },
+          {
+            "row": 7,
+            "bits": "0110",
+            "n": 1,
+            "incl": 0.754,
+            "pri": 0.267,
+            "OUT": 0,
+            "cases": [
+              "WAA"
+            ],
+            "pos_outcome_cases": [
+              "WAA"
+            ],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 8,
+            "bits": "0111",
+            "n": 11,
+            "incl": 0.27,
+            "pri": 0.0,
+            "OUT": 0,
+            "cases": [
+              "ASA",
+              "FAU-A",
+              "FAU-L",
+              "GIA-CRM",
+              "GRA",
+              "GRO",
+              "MIR",
+              "PIE-S",
+              "VKR",
+              "VGI",
+              "VDB-HR"
+            ],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": [
+              "ASA",
+              "FAU-A",
+              "FAU-L",
+              "GIA-CRM",
+              "GRA",
+              "GRO",
+              "MIR",
+              "PIE-S",
+              "VKR",
+              "VGI",
+              "VDB-HR"
+            ]
+          },
+          {
+            "row": 9,
+            "bits": "1000",
+            "n": 3,
+            "incl": 0.935,
+            "pri": 0.901,
+            "OUT": 1,
+            "cases": [
+              "STR-BANK",
+              "MON",
+              "VDB-LM"
+            ],
+            "pos_outcome_cases": [
+              "STR-BANK",
+              "MON",
+              "VDB-LM"
+            ],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 10,
+            "bits": "1001",
+            "n": 1,
+            "incl": 0.641,
+            "pri": 0.149,
+            "OUT": 0,
+            "cases": [
+              "GIA-RM"
+            ],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": [
+              "GIA-RM"
+            ]
+          },
+          {
+            "row": 11,
+            "bits": "1010",
+            "n": 0,
+            "incl": 0.804,
+            "pri": 0.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 12,
+            "bits": "1011",
+            "n": 0,
+            "incl": 0.544,
+            "pri": 0.0,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 13,
+            "bits": "1100",
+            "n": 1,
+            "incl": 0.931,
+            "pri": 0.857,
+            "OUT": 1,
+            "cases": [
+              "MAY-BIO"
+            ],
+            "pos_outcome_cases": [
+              "MAY-BIO"
+            ],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 14,
+            "bits": "1101",
+            "n": 1,
+            "incl": 0.746,
+            "pri": 0.332,
+            "OUT": 0,
+            "cases": [
+              "EIN-T"
+            ],
+            "pos_outcome_cases": [
+              "EIN-T"
+            ],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 15,
+            "bits": "1110",
+            "n": 0,
+            "incl": 0.878,
+            "pri": 0.472,
+            "OUT": "?",
+            "cases": [],
+            "pos_outcome_cases": [],
+            "neg_outcome_cases": []
+          },
+          {
+            "row": 16,
+            "bits": "1111",
+            "n": 2,
+            "incl": 0.629,
+            "pri": 0.16,
+            "OUT": 0,
+            "cases": [
+              "GIA-DSL",
+              "MAY-REC"
+            ],
+            "pos_outcome_cases": [
+              "MAY-REC"
+            ],
+            "neg_outcome_cases": [
+              "GIA-DSL"
+            ]
+          }
+        ],
+        "complex": [
+          {
+            "formula": "INST_SHD*~BND_INF*~EPI_VAL + COERC*~BND_INF*~EPI_VAL",
+            "terms": [
+              {
+                "term": "INST_SHD*~BND_INF*~EPI_VAL",
+                "incl": 0.931,
+                "pri": 0.867,
+                "cov": 0.578,
+                "ucov": 0.289,
+                "n_cases": 4,
+                "cases": [
+                  "LEB-BREAST",
+                  "LEB-BONE",
+                  "MAY-BIO",
+                  "PIE-N"
+                ]
+              },
+              {
+                "term": "COERC*~BND_INF*~EPI_VAL",
+                "incl": 0.954,
+                "pri": 0.929,
+                "cov": 0.444,
+                "ucov": 0.155,
+                "n_cases": 4,
+                "cases": [
+                  "MAY-BIO",
+                  "STR-BANK",
+                  "MON",
+                  "VDB-LM"
+                ]
+              }
+            ],
+            "sol_incl": 0.944,
+            "sol_pri": 0.91,
+            "sol_cov": 0.733
+          }
+        ],
+        "parsimonious": [
+          {
+            "formula": "~BND_INF*~EPI_VAL",
+            "terms": [
+              {
+                "term": "~BND_INF*~EPI_VAL",
+                "incl": 0.949,
+                "pri": 0.921,
+                "cov": 0.798,
+                "ucov": 0.798,
+                "n_cases": 7,
+                "cases": [
+                  "LEB-BREAST",
+                  "LEB-BONE",
+                  "MAY-BIO",
+                  "STR-BANK",
+                  "MON",
+                  "PIE-N",
+                  "VDB-LM"
+                ]
+              }
+            ],
+            "sol_incl": 0.949,
+            "sol_pri": 0.921,
+            "sol_cov": 0.798
+          }
+        ],
+        "intermediate": [
+          {
+            "formula": "~BND_INF*~EPI_VAL",
+            "terms": [
+              {
+                "term": "~BND_INF*~EPI_VAL",
+                "incl": 0.949,
+                "pri": 0.921,
+                "cov": 0.798,
+                "ucov": 0.798,
+                "n_cases": 7,
+                "cases": [
+                  "LEB-BREAST",
+                  "LEB-BONE",
+                  "MAY-BIO",
+                  "STR-BANK",
+                  "MON",
+                  "PIE-N",
+                  "VDB-LM"
+                ]
+              }
+            ],
+            "sol_incl": 0.949,
+            "sol_pri": 0.921,
+            "sol_cov": 0.798
+          }
+        ]
+      },
+      "row_0100_shift": {
+        "cases": [
+          "LEB-BREAST",
+          "LEB-BONE",
+          "WAA"
+        ],
+        "DEC_AUTH_incl_pri_out": [
+          0.91,
+          0.862,
+          1
+        ],
+        "GEN_AUTH_incl_pri_out": [
+          0.576,
+          0.0,
+          0
+        ]
+      },
+      "branch_sensitivity_GEN_AUTH": {
+        "A0_complete_N26": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*BND_INF + EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.865,
+            0.817,
+            0.952
+          ],
+          "neg_GEN_AUTH_formula": "~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.949,
+            0.921,
+            0.798
+          ],
+          "esa_csas_excluded": []
+        },
+        "A1_avail_N27": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*BND_INF + EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.842,
+            0.785,
+            0.953
+          ],
+          "neg_GEN_AUTH_formula": "~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.95,
+            0.921,
+            0.768
+          ],
+          "esa_csas_excluded": []
+        },
+        "B_compensatory": {
+          "GEN_AUTH_formula": "BND_INF*EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.947,
+            0.924,
+            0.696
+          ],
+          "neg_GEN_AUTH_formula": "COERC*~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.89,
+            0.793,
+            0.474
+          ],
+          "esa_csas_excluded": [
+            "1010",
+            "1110"
+          ]
+        },
+        "C1_null_zero": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*BND_INF + EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.842,
+            0.785,
+            0.953
+          ],
+          "neg_GEN_AUTH_formula": "~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.95,
+            0.921,
+            0.768
+          ],
+          "esa_csas_excluded": []
+        },
+        "C2_null_one": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*BND_INF + EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.842,
+            0.785,
+            0.953
+          ],
+          "neg_GEN_AUTH_formula": "~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.95,
+            0.921,
+            0.768
+          ],
+          "esa_csas_excluded": []
+        },
+        "D_nosplits": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*BND_INF + EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.871,
+            0.825,
+            0.933
+          ],
+          "neg_GEN_AUTH_formula": "~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.925,
+            0.89,
+            0.8
+          ],
+          "esa_csas_excluded": []
+        },
+        "E_jur_only": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*EPI_VAL + BND_INF*EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.981,
+            0.974,
+            0.917
+          ],
+          "neg_GEN_AUTH_formula": "~COERC*~INST_SHD*~BND_INF + ~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.974,
+            0.957,
+            0.797
+          ],
+          "esa_csas_excluded": []
+        },
+        "F_logistic": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*EPI_VAL + INST_SHD*BND_INF*EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.911,
+            0.88,
+            0.863
+          ],
+          "neg_GEN_AUTH_formula": "~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.973,
+            0.96,
+            0.783
+          ],
+          "esa_csas_excluded": []
+        },
+        "G_direct": {
+          "GEN_AUTH_formula": "~COERC*INST_SHD*BND_INF + EPI_VAL",
+          "GEN_AUTH_fit": [
+            0.859,
+            0.818,
+            0.961
+          ],
+          "neg_GEN_AUTH_formula": "~BND_INF*~EPI_VAL",
+          "neg_GEN_AUTH_fit": [
+            0.955,
+            0.932,
+            0.778
+          ],
+          "esa_csas_excluded": []
+        }
+      }
+    },
+    "pathway_3B_process_sequence": {
+      "stage_entropies_bits": {
+        "T0": 1.953,
+        "T1": 1.793,
+        "T2": 1.847,
+        "T3": 1.714
+      },
+      "information_gain_toward_T3": {
+        "T0": {
+          "MI_bits": 0.477,
+          "NMI_share_of_T3_entropy": 0.279
+        },
+        "T1": {
+          "MI_bits": 0.617,
+          "NMI_share_of_T3_entropy": 0.36
+        },
+        "T2": {
+          "MI_bits": 1.388,
+          "NMI_share_of_T3_entropy": 0.81
+        },
+        "T0_plus_T1": {
+          "MI_bits": 1.108,
+          "NMI_share_of_T3_entropy": 0.646
+        },
+        "T0_plus_T1_plus_T2": {
+          "MI_bits": 1.714,
+          "NMI_share_of_T3_entropy": 1.0
+        }
+      },
+      "transitions": {
+        "T0_to_T1": {
+          "counts": {
+            "epistemic_divergence": {
+              "advisory_professional": 6,
+              "coercive_substitutive": 1,
+              "managed_hybrid": 4,
+              "participatory_codesign": 2
+            },
+            "jurisdictional_threat": {
+              "advisory_professional": 1,
+              "coercive_substitutive": 5,
+              "managed_hybrid": 0,
+              "participatory_codesign": 0
+            },
+            "operational_breakdown": {
+              "advisory_professional": 0,
+              "coercive_substitutive": 2,
+              "managed_hybrid": 2,
+              "participatory_codesign": 1
+            },
+            "smooth_complementarity": {
+              "advisory_professional": 1,
+              "coercive_substitutive": 0,
+              "managed_hybrid": 1,
+              "participatory_codesign": 1
+            }
+          },
+          "probs": {
+            "epistemic_divergence": {
+              "advisory_professional": 0.75,
+              "coercive_substitutive": 0.125,
+              "managed_hybrid": 0.571,
+              "participatory_codesign": 0.5
+            },
+            "jurisdictional_threat": {
+              "advisory_professional": 0.125,
+              "coercive_substitutive": 0.625,
+              "managed_hybrid": 0.0,
+              "participatory_codesign": 0.0
+            },
+            "operational_breakdown": {
+              "advisory_professional": 0.0,
+              "coercive_substitutive": 0.25,
+              "managed_hybrid": 0.286,
+              "participatory_codesign": 0.25
+            },
+            "smooth_complementarity": {
+              "advisory_professional": 0.125,
+              "coercive_substitutive": 0.0,
+              "managed_hybrid": 0.143,
+              "participatory_codesign": 0.25
+            }
+          }
+        },
+        "T1_to_T2": {
+          "counts": {
+            "client_relational_enhancement": {
+              "epistemic_divergence": 0,
+              "jurisdictional_threat": 2,
+              "operational_breakdown": 0,
+              "smooth_complementarity": 0
+            },
+            "co_design_and_audit": {
+              "epistemic_divergence": 9,
+              "jurisdictional_threat": 0,
+              "operational_breakdown": 4,
+              "smooth_complementarity": 1
+            },
+            "compliance_or_drift": {
+              "epistemic_divergence": 0,
+              "jurisdictional_threat": 3,
+              "operational_breakdown": 0,
+              "smooth_complementarity": 2
+            },
+            "curatorial_brokerage": {
+              "epistemic_divergence": 1,
+              "jurisdictional_threat": 0,
+              "operational_breakdown": 0,
+              "smooth_complementarity": 0
+            },
+            "jurisdictional_shielding": {
+              "epistemic_divergence": 3,
+              "jurisdictional_threat": 1,
+              "operational_breakdown": 1,
+              "smooth_complementarity": 0
+            }
+          },
+          "probs": {
+            "client_relational_enhancement": {
+              "epistemic_divergence": 0.0,
+              "jurisdictional_threat": 0.333,
+              "operational_breakdown": 0.0,
+              "smooth_complementarity": 0.0
+            },
+            "co_design_and_audit": {
+              "epistemic_divergence": 0.692,
+              "jurisdictional_threat": 0.0,
+              "operational_breakdown": 0.8,
+              "smooth_complementarity": 0.333
+            },
+            "compliance_or_drift": {
+              "epistemic_divergence": 0.0,
+              "jurisdictional_threat": 0.5,
+              "operational_breakdown": 0.0,
+              "smooth_complementarity": 0.667
+            },
+            "curatorial_brokerage": {
+              "epistemic_divergence": 0.077,
+              "jurisdictional_threat": 0.0,
+              "operational_breakdown": 0.0,
+              "smooth_complementarity": 0.0
+            },
+            "jurisdictional_shielding": {
+              "epistemic_divergence": 0.231,
+              "jurisdictional_threat": 0.167,
+              "operational_breakdown": 0.2,
+              "smooth_complementarity": 0.0
+            }
+          }
+        },
+        "T2_to_T3": {
+          "counts": {
+            "R1_Generative_CoEvolution": {
+              "client_relational_enhancement": 0,
+              "co_design_and_audit": 13,
+              "compliance_or_drift": 0,
+              "curatorial_brokerage": 0,
+              "jurisdictional_shielding": 0
+            },
+            "R2_Defensive_Curatorial_Shielding": {
+              "client_relational_enhancement": 0,
+              "co_design_and_audit": 1,
+              "compliance_or_drift": 1,
+              "curatorial_brokerage": 1,
+              "jurisdictional_shielding": 5
+            },
+            "R3_Relational_Reconstruction": {
+              "client_relational_enhancement": 2,
+              "co_design_and_audit": 0,
+              "compliance_or_drift": 0,
+              "curatorial_brokerage": 0,
+              "jurisdictional_shielding": 0
+            },
+            "R4_Displacement_or_Drift": {
+              "client_relational_enhancement": 0,
+              "co_design_and_audit": 0,
+              "compliance_or_drift": 4,
+              "curatorial_brokerage": 0,
+              "jurisdictional_shielding": 0
+            }
+          },
+          "probs": {
+            "R1_Generative_CoEvolution": {
+              "client_relational_enhancement": 0.0,
+              "co_design_and_audit": 0.929,
+              "compliance_or_drift": 0.0,
+              "curatorial_brokerage": 0.0,
+              "jurisdictional_shielding": 0.0
+            },
+            "R2_Defensive_Curatorial_Shielding": {
+              "client_relational_enhancement": 0.0,
+              "co_design_and_audit": 0.071,
+              "compliance_or_drift": 0.2,
+              "curatorial_brokerage": 1.0,
+              "jurisdictional_shielding": 1.0
+            },
+            "R3_Relational_Reconstruction": {
+              "client_relational_enhancement": 1.0,
+              "co_design_and_audit": 0.0,
+              "compliance_or_drift": 0.0,
+              "curatorial_brokerage": 0.0,
+              "jurisdictional_shielding": 0.0
+            },
+            "R4_Displacement_or_Drift": {
+              "client_relational_enhancement": 0.0,
+              "co_design_and_audit": 0.0,
+              "compliance_or_drift": 0.8,
+              "curatorial_brokerage": 0.0,
+              "jurisdictional_shielding": 0.0
+            }
+          }
+        },
+        "T0_to_T3": {
+          "counts": {
+            "R1_Generative_CoEvolution": {
+              "advisory_professional": 4,
+              "coercive_substitutive": 1,
+              "managed_hybrid": 4,
+              "participatory_codesign": 4
+            },
+            "R2_Defensive_Curatorial_Shielding": {
+              "advisory_professional": 3,
+              "coercive_substitutive": 2,
+              "managed_hybrid": 3,
+              "participatory_codesign": 0
+            },
+            "R3_Relational_Reconstruction": {
+              "advisory_professional": 0,
+              "coercive_substitutive": 2,
+              "managed_hybrid": 0,
+              "participatory_codesign": 0
+            },
+            "R4_Displacement_or_Drift": {
+              "advisory_professional": 1,
+              "coercive_substitutive": 3,
+              "managed_hybrid": 0,
+              "participatory_codesign": 0
+            }
+          },
+          "probs": {
+            "R1_Generative_CoEvolution": {
+              "advisory_professional": 0.5,
+              "coercive_substitutive": 0.125,
+              "managed_hybrid": 0.571,
+              "participatory_codesign": 1.0
+            },
+            "R2_Defensive_Curatorial_Shielding": {
+              "advisory_professional": 0.375,
+              "coercive_substitutive": 0.25,
+              "managed_hybrid": 0.429,
+              "participatory_codesign": 0.0
+            },
+            "R3_Relational_Reconstruction": {
+              "advisory_professional": 0.0,
+              "coercive_substitutive": 0.25,
+              "managed_hybrid": 0.0,
+              "participatory_codesign": 0.0
+            },
+            "R4_Displacement_or_Drift": {
+              "advisory_professional": 0.125,
+              "coercive_substitutive": 0.375,
+              "managed_hybrid": 0.0,
+              "participatory_codesign": 0.0
+            }
+          }
+        }
+      },
+      "trajectories": [
+        {
+          "T0": "advisory_professional",
+          "T1": "epistemic_divergence",
+          "T2": "co_design_and_audit",
+          "T3": "R1_Generative_CoEvolution",
+          "n": 4,
+          "cases": [
+            "FAU-A",
+            "FAU-L",
+            "LEB-LUNG",
+            "PIE-S"
+          ]
+        },
+        {
+          "T0": "coercive_substitutive",
+          "T1": "jurisdictional_threat",
+          "T2": "compliance_or_drift",
+          "T3": "R4_Displacement_or_Drift",
+          "n": 3,
+          "cases": [
+            "STR-BANK",
+            "MON",
+            "VDB-LM"
+          ]
+        },
+        {
+          "T0": "advisory_professional",
+          "T1": "epistemic_divergence",
+          "T2": "jurisdictional_shielding",
+          "T3": "R2_Defensive_Curatorial_Shielding",
+          "n": 2,
+          "cases": [
+            "LEB-BREAST",
+            "LEB-BONE"
+          ]
+        },
+        {
+          "T0": "coercive_substitutive",
+          "T1": "jurisdictional_threat",
+          "T2": "client_relational_enhancement",
+          "T3": "R3_Relational_Reconstruction",
+          "n": 2,
+          "cases": [
+            "MAY-BIO",
+            "MAY-REC"
+          ]
+        },
+        {
+          "T0": "managed_hybrid",
+          "T1": "epistemic_divergence",
+          "T2": "co_design_and_audit",
+          "T3": "R1_Generative_CoEvolution",
+          "n": 2,
+          "cases": [
+            "GIA-CRM",
+            "VGI"
+          ]
+        },
+        {
+          "T0": "managed_hybrid",
+          "T1": "operational_breakdown",
+          "T2": "co_design_and_audit",
+          "T3": "R1_Generative_CoEvolution",
+          "n": 2,
+          "cases": [
+            "GRO",
+            "VDB-HR"
+          ]
+        },
+        {
+          "T0": "participatory_codesign",
+          "T1": "epistemic_divergence",
+          "T2": "co_design_and_audit",
+          "T3": "R1_Generative_CoEvolution",
+          "n": 2,
+          "cases": [
+            "ASA",
+            "VKR"
+          ]
+        },
+        {
+          "T0": "advisory_professional",
+          "T1": "jurisdictional_threat",
+          "T2": "jurisdictional_shielding",
+          "T3": "R2_Defensive_Curatorial_Shielding",
+          "n": 1,
+          "cases": [
+            "LI"
+          ]
+        },
+        {
+          "T0": "advisory_professional",
+          "T1": "smooth_complementarity",
+          "T2": "compliance_or_drift",
+          "T3": "R4_Displacement_or_Drift",
+          "n": 1,
+          "cases": [
+            "PIE-N"
+          ]
+        },
+        {
+          "T0": "coercive_substitutive",
+          "T1": "epistemic_divergence",
+          "T2": "co_design_and_audit",
+          "T3": "R2_Defensive_Curatorial_Shielding",
+          "n": 1,
+          "cases": [
+            "GIA-RM"
+          ]
+        },
+        {
+          "T0": "coercive_substitutive",
+          "T1": "operational_breakdown",
+          "T2": "co_design_and_audit",
+          "T3": "R1_Generative_CoEvolution",
+          "n": 1,
+          "cases": [
+            "GIA-DSL"
+          ]
+        },
+        {
+          "T0": "coercive_substitutive",
+          "T1": "operational_breakdown",
+          "T2": "jurisdictional_shielding",
+          "T3": "R2_Defensive_Curatorial_Shielding",
+          "n": 1,
+          "cases": [
+            "EIN-T"
+          ]
+        },
+        {
+          "T0": "managed_hybrid",
+          "T1": "epistemic_divergence",
+          "T2": "curatorial_brokerage",
+          "T3": "R2_Defensive_Curatorial_Shielding",
+          "n": 1,
+          "cases": [
+            "WAA"
+          ]
+        },
+        {
+          "T0": "managed_hybrid",
+          "T1": "epistemic_divergence",
+          "T2": "jurisdictional_shielding",
+          "T3": "R2_Defensive_Curatorial_Shielding",
+          "n": 1,
+          "cases": [
+            "LEE"
+          ]
+        },
+        {
+          "T0": "managed_hybrid",
+          "T1": "smooth_complementarity",
+          "T2": "compliance_or_drift",
+          "T3": "R2_Defensive_Curatorial_Shielding",
+          "n": 1,
+          "cases": [
+            "EIN-D"
+          ]
+        },
+        {
+          "T0": "participatory_codesign",
+          "T1": "operational_breakdown",
+          "T2": "co_design_and_audit",
+          "T3": "R1_Generative_CoEvolution",
+          "n": 1,
+          "cases": [
+            "GRA"
+          ]
+        },
+        {
+          "T0": "participatory_codesign",
+          "T1": "smooth_complementarity",
+          "T2": "co_design_and_audit",
+          "T3": "R1_Generative_CoEvolution",
+          "n": 1,
+          "cases": [
+            "MIR"
+          ]
+        }
+      ]
+    },
+    "pathway_3C_regime_discriminant": [
+      {
+        "construct": "EPI_GEN",
+        "name": "Epistemic Generativity & Practice Renewal",
+        "kruskal_H": 22.242,
+        "eta2_effect": 0.837,
+        "R1_Generative_CoEvolution_mean": 4.62,
+        "R1_Generative_CoEvolution_median": 5.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 2.25,
+        "R2_Defensive_Curatorial_Shielding_median": 2.0,
+        "R3_Relational_Reconstruction_mean": 4.0,
+        "R3_Relational_Reconstruction_median": 4.0,
+        "R4_Displacement_or_Drift_mean": 1.25,
+        "R4_Displacement_or_Drift_median": 1.0
+      },
+      {
+        "construct": "GTG_AUD",
+        "name": "Ground-Truth Interrogation & In-Situ Auditing",
+        "kruskal_H": 18.972,
+        "eta2_effect": 0.694,
+        "R1_Generative_CoEvolution_mean": 4.54,
+        "R1_Generative_CoEvolution_median": 5.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 3.12,
+        "R2_Defensive_Curatorial_Shielding_median": 3.5,
+        "R3_Relational_Reconstruction_mean": 2.5,
+        "R3_Relational_Reconstruction_median": 2.5,
+        "R4_Displacement_or_Drift_mean": 1.25,
+        "R4_Displacement_or_Drift_median": 1.0
+      },
+      {
+        "construct": "DEC_AUTH",
+        "name": "Substantive Decision Authority over Case Judgments",
+        "kruskal_H": 17.515,
+        "eta2_effect": 0.631,
+        "R1_Generative_CoEvolution_mean": 4.77,
+        "R1_Generative_CoEvolution_median": 5.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 4.12,
+        "R2_Defensive_Curatorial_Shielding_median": 4.0,
+        "R3_Relational_Reconstruction_mean": 2.0,
+        "R3_Relational_Reconstruction_median": 2.0,
+        "R4_Displacement_or_Drift_mean": 1.5,
+        "R4_Displacement_or_Drift_median": 1.5
+      },
+      {
+        "construct": "SYS_MAL",
+        "name": "Technical Malleability & Local Reconfigurability",
+        "kruskal_H": 17.383,
+        "eta2_effect": 0.625,
+        "R1_Generative_CoEvolution_mean": 4.15,
+        "R1_Generative_CoEvolution_median": 4.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 2.12,
+        "R2_Defensive_Curatorial_Shielding_median": 2.5,
+        "R3_Relational_Reconstruction_mean": 3.0,
+        "R3_Relational_Reconstruction_median": 3.0,
+        "R4_Displacement_or_Drift_mean": 1.5,
+        "R4_Displacement_or_Drift_median": 1.5
+      },
+      {
+        "construct": "DEV_BRG",
+        "name": "Developer-Expert Co-Design & Boundary Bridging",
+        "kruskal_H": 16.063,
+        "eta2_effect": 0.568,
+        "R1_Generative_CoEvolution_mean": 4.15,
+        "R1_Generative_CoEvolution_median": 4.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 1.62,
+        "R2_Defensive_Curatorial_Shielding_median": 1.5,
+        "R3_Relational_Reconstruction_mean": 3.0,
+        "R3_Relational_Reconstruction_median": 3.0,
+        "R4_Displacement_or_Drift_mean": 1.5,
+        "R4_Displacement_or_Drift_median": 1.5
+      },
+      {
+        "construct": "MED_BRK",
+        "name": "Dedicated Knowledge Brokerage / Translator Role",
+        "kruskal_H": 12.927,
+        "eta2_effect": 0.432,
+        "R1_Generative_CoEvolution_mean": 3.85,
+        "R1_Generative_CoEvolution_median": 4.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 2.0,
+        "R2_Defensive_Curatorial_Shielding_median": 1.5,
+        "R3_Relational_Reconstruction_mean": 2.5,
+        "R3_Relational_Reconstruction_median": 2.5,
+        "R4_Displacement_or_Drift_mean": 1.25,
+        "R4_Displacement_or_Drift_median": 1.0
+      },
+      {
+        "construct": "CLI_EMB",
+        "name": "Client-Facing Relational Embeddedness",
+        "kruskal_H": 12.334,
+        "eta2_effect": 0.406,
+        "R1_Generative_CoEvolution_mean": 3.77,
+        "R1_Generative_CoEvolution_median": 4.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 3.62,
+        "R2_Defensive_Curatorial_Shielding_median": 4.0,
+        "R3_Relational_Reconstruction_mean": 5.0,
+        "R3_Relational_Reconstruction_median": 5.0,
+        "R4_Displacement_or_Drift_mean": 2.25,
+        "R4_Displacement_or_Drift_median": 2.0
+      },
+      {
+        "construct": "ALG_SUB",
+        "name": "Algorithmic Decision Substitution",
+        "kruskal_H": 8.883,
+        "eta2_effect": 0.256,
+        "R1_Generative_CoEvolution_mean": 1.62,
+        "R1_Generative_CoEvolution_median": 1.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 2.0,
+        "R2_Defensive_Curatorial_Shielding_median": 1.5,
+        "R3_Relational_Reconstruction_mean": 5.0,
+        "R3_Relational_Reconstruction_median": 5.0,
+        "R4_Displacement_or_Drift_mean": 3.5,
+        "R4_Displacement_or_Drift_median": 4.0
+      },
+      {
+        "construct": "PROF_JUR",
+        "name": "Institutionalized Professional Jurisdiction & Accountability",
+        "kruskal_H": 7.318,
+        "eta2_effect": 0.188,
+        "R1_Generative_CoEvolution_mean": 3.38,
+        "R1_Generative_CoEvolution_median": 3.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 3.38,
+        "R2_Defensive_Curatorial_Shielding_median": 3.0,
+        "R3_Relational_Reconstruction_mean": 2.0,
+        "R3_Relational_Reconstruction_median": 2.0,
+        "R4_Displacement_or_Drift_mean": 1.75,
+        "R4_Displacement_or_Drift_median": 2.0
+      },
+      {
+        "construct": "MGT_CTRL",
+        "name": "Managerial Efficiency & Control Mandate",
+        "kruskal_H": 5.928,
+        "eta2_effect": 0.133,
+        "R1_Generative_CoEvolution_mean": 2.77,
+        "R1_Generative_CoEvolution_median": 2.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 3.43,
+        "R2_Defensive_Curatorial_Shielding_median": 4.0,
+        "R3_Relational_Reconstruction_mean": 5.0,
+        "R3_Relational_Reconstruction_median": 5.0,
+        "R4_Displacement_or_Drift_mean": 4.0,
+        "R4_Displacement_or_Drift_median": 4.5
+      },
+      {
+        "construct": "EPI_OPA",
+        "name": "Experienced Algorithmic Opacity",
+        "kruskal_H": 3.429,
+        "eta2_effect": 0.019,
+        "R1_Generative_CoEvolution_mean": 4.08,
+        "R1_Generative_CoEvolution_median": 4.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 3.88,
+        "R2_Defensive_Curatorial_Shielding_median": 4.0,
+        "R3_Relational_Reconstruction_mean": 5.0,
+        "R3_Relational_Reconstruction_median": 5.0,
+        "R4_Displacement_or_Drift_mean": 4.0,
+        "R4_Displacement_or_Drift_median": 4.0
+      },
+      {
+        "construct": "VIS_FAIL",
+        "name": "Visible Operational Breakdown / Edge-Case Failure",
+        "kruskal_H": 2.745,
+        "eta2_effect": 0.0,
+        "R1_Generative_CoEvolution_mean": 3.38,
+        "R1_Generative_CoEvolution_median": 3.0,
+        "R2_Defensive_Curatorial_Shielding_mean": 3.5,
+        "R2_Defensive_Curatorial_Shielding_median": 3.5,
+        "R3_Relational_Reconstruction_mean": 3.0,
+        "R3_Relational_Reconstruction_median": 3.0,
+        "R4_Displacement_or_Drift_mean": 2.5,
+        "R4_Displacement_or_Drift_median": 3.0
+      }
+    ],
+    "pathway_3D_ols_failure_audit": {
+      "DEC_AUTH": {
+        "n": 26,
+        "R2": 0.792,
+        "adj_R2": 0.752,
+        "coefs": [
+          {
+            "term": "Intercept",
+            "beta": 0.423,
+            "se": 0.147,
+            "t": 2.89
+          },
+          {
+            "term": "COERC",
+            "beta": -0.454,
+            "se": 0.108,
+            "t": -4.2
+          },
+          {
+            "term": "INST_SHD",
+            "beta": 0.197,
+            "se": 0.154,
+            "t": 1.28
+          },
+          {
+            "term": "BND_INF",
+            "beta": 0.012,
+            "se": 0.136,
+            "t": 0.09
+          },
+          {
+            "term": "EPI_VAL",
+            "beta": 0.481,
+            "se": 0.135,
+            "t": 3.56
+          }
+        ],
+        "anomalies": [
+          {
+            "case_id": "EIN-D",
+            "actual": 0.524,
+            "predicted": 0.824,
+            "residual": -0.3,
+            "sign_error": false
+          },
+          {
+            "case_id": "EIN-T",
+            "actual": 0.762,
+            "predicted": 0.432,
+            "residual": 0.33,
+            "sign_error": true
+          },
+          {
+            "case_id": "GIA-RM",
+            "actual": 0.524,
+            "predicted": 0.499,
+            "residual": 0.025,
+            "sign_error": true
+          },
+          {
+            "case_id": "LEB-BREAST",
+            "actual": 1.0,
+            "predicted": 0.747,
+            "residual": 0.253,
+            "sign_error": false
+          },
+          {
+            "case_id": "LEB-BONE",
+            "actual": 1.0,
+            "predicted": 0.747,
+            "residual": 0.253,
+            "sign_error": false
+          },
+          {
+            "case_id": "PIE-N",
+            "actual": 0.263,
+            "predicted": 0.527,
+            "residual": -0.264,
+            "sign_error": true
+          }
+        ]
+      },
+      "GEN_AUTH": {
+        "n": 26,
+        "R2": 0.87,
+        "adj_R2": 0.845,
+        "coefs": [
+          {
+            "term": "Intercept",
+            "beta": 0.108,
+            "se": 0.125,
+            "t": 0.86
+          },
+          {
+            "term": "COERC",
+            "beta": -0.197,
+            "se": 0.092,
+            "t": -2.13
+          },
+          {
+            "term": "INST_SHD",
+            "beta": -0.043,
+            "se": 0.131,
+            "t": -0.33
+          },
+          {
+            "term": "BND_INF",
+            "beta": 0.29,
+            "se": 0.116,
+            "t": 2.51
+          },
+          {
+            "term": "EPI_VAL",
+            "beta": 0.697,
+            "se": 0.115,
+            "t": 6.04
+          }
+        ],
+        "anomalies": [
+          {
+            "case_id": "EIN-D",
+            "actual": 0.263,
+            "predicted": 0.631,
+            "residual": -0.368,
+            "sign_error": true
+          },
+          {
+            "case_id": "LEB-LUNG",
+            "actual": 1.0,
+            "predicted": 0.762,
+            "residual": 0.238,
+            "sign_error": false
+          }
+        ]
+      }
+    },
+    "governance_dashboard": {
+      "main": {
+        "status": "OK",
+        "branch_level": "root",
+        "execution_mode": "scripted_demo",
+        "stale_packets": [],
+        "n_artifacts": 6,
+        "n_packets": 0
+      },
+      "Demo2_QCA_Only": {
+        "status": "OK",
+        "branch_level": "design",
+        "execution_mode": "scripted_demo",
+        "stale_packets": [],
+        "n_artifacts": 6,
+        "n_packets": 0
+      },
+      "Demo3_BestFit_Hybrid": {
+        "status": "OK",
+        "branch_level": "design",
+        "execution_mode": "scripted_demo",
+        "stale_packets": [],
+        "n_artifacts": 6,
+        "n_packets": 0
+      }
+    }
+  }
+}
